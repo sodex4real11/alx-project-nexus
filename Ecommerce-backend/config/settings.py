@@ -19,7 +19,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'drf_spectacular',
-    'apps.users',
     'apps.catalog',
 ]
 
@@ -46,3 +45,4 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'API for product catalog',
     'VERSION': '1.0.0',
 }
+
