@@ -11,6 +11,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'              # required
+STATICFILES_DIRS = [BASE_DIR / 'static']  # optional, for extra static folders
+STATIC_ROOT = BASE_DIR / 'staticfiles'    # optional, for collectstatic in production
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -69,6 +74,7 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+
 }
 
 SPECTACULAR_SETTINGS = {
