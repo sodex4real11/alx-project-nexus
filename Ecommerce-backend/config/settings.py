@@ -8,6 +8,10 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+if not os.path.exists(BASE_DIR / 'static'):
+    os.makedirs(BASE_DIR / 'static', exist_ok=True)
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
 AUTH_USER_MODEL = 'users.User'
 ROOT_URLCONF = 'config.urls'
 
