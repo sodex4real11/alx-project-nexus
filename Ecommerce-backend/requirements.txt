@@ -45,5 +45,6 @@ typing_extensions==4.15.0
 tzdata==2025.2
 uritemplate==4.2.0
 vine==5.1.0
+waitress==3.0.2
 wcwidth==0.2.14
 whitenoise==6.11.0
