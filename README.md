@@ -62,3 +62,20 @@ python manage.py runserver
 Swagger UI: /api/docs/
 
 OpenAPI JSON: /api/schema/
+
+#### PROJECT DETAILS
+-----------------------
+
+Repository: https://github.com/sodex4real11/alx-project-nexus
+
+Hosted project : https://alx-project-nexus-yojr.onrender.com/
+
+Hosted API: https://alx-project-nexus-yojr.onrender.com/api/docs/
+
+Admin Panel: https://alx-project-nexus-yojr.onrender.com/admin/
+
+ERD Diagram: https://docs.google.com/presentation/d/1BU-0ZyhvsVw7PlsAY0lKGdhd6lRAAHZ54Epf7wInOGs/edit?usp=sharing
+
+Presentation Slides: https://docs.google.com/presentation/d/1BU-0ZyhvsVw7PlsAY0lKGdhd6lRAAHZ54Epf7wInOGs/edit?usp=sharing
+
+Demo Video: https://drive.google.com/file/d/1No3VbCA68Fzos4oJkTr8zV2ItIB4xZGE/view?usp=sharing
