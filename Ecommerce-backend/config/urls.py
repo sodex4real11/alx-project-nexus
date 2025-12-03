@@ -27,10 +27,10 @@ def root_view(request):
     return JsonResponse({
         "message": "Ecommerce API is running",
         "documentation": {
-            "swagger": "/api/docs/"
+            "swagger": "/api/docs/",
             "redoc": "/api/redoc/",
-            "schema": "/api?schema/"
-        }
+            "schema": "/api/schema/"
+        },
         "admin": "/admin/",
         "api": "/api/"
     })
