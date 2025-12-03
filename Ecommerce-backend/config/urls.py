@@ -14,6 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.http import JsonResponse
 from django.contrib import admin
 from django.urls import path, include
 from drf_spectacular.views import (
@@ -22,7 +23,21 @@ from drf_spectacular.views import (
     SpectacularRedocView,
 )
 
+def root_view(request):
+    return JsonResponse({
+        "message": "Ecommerce API is running",
+        "documentation": {
+            "swagger": "/api/docs/"
+            "redoc": "/api/redoc/",
+            "schema": "/api?schema/"
+        }
+        "admin": "/admin/",
+        "api": "/api/"
+    })
+
 urlpatterns = [
+    path('', root_view, name='root'),
+
     path('admin/', admin.site.urls),
 
     # API schema
